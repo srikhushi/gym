@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/css_style.css">
+<style>
+    body{
+        height:100%;
+        width:82%;
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin:503px 123px;
+        padding: 10px 26px;
+        background-image: url('img/wallppaer.jpg');
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        top:13px;
+        display:block;
+    }
+    .navbar{
+        background-color: black;
+        color:rgb(247, 210, 0);
+        border-radius: 55px;
+    }
+    .navbar li{
+        list-style: none;
+        color:rgb(233, 250, 2);
+        margin:-20px 34px;
+        float:left;
+        text-decoration: none;
+        padding:2px 0px;
+        font-size: 23px;
+    }
+    .navbar ul{
+        overflow:auto;
+    }
+    .navbar li a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    .search{
+        float: right;
+        color: white;
+        padding: 12px 75px;
+    }
+    .navbar input{
+        border: 2px solid black;
+        border-radius: 23px;
+        padding: 1px 39px;
+        width: 143px;
+    }
+    .header{
+        border: 4px solid white;
+        border-radius:4px;
+        background-color: rgb(240, 234, 234);
+        color:rgb(17, 16, 14);
+        margin:-517px -152px;
+        padding:12px 148px;
+        width:100%;
+        height:23%;
+        top:20px;
+    }
+    
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: static;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 137px;
+        height:120px;
+        filter: invert(100%);
+        float:left;
+        margin:-10px -151px;
+        padding:1px 8px;
+
+    }
+
+    .left div {
+        line-height: 158px;
+        font-size: 128px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        /*border: 2px solid rgb(180, 14, 14);*/
+        margin: 108px 9px;
+        padding: 17px 36px;;
+        width: 456px;
+        border-radius: 28px;
+        height:12px;
+        display:inline-block;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        border: 2px solid black;
+        margin: 9px -164px;
+        padding: 1px 4px;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+        margin:-79px -169px;
+        padding:21px 9px;
+        float:left;
+        width: 457px;
+        height:120px;
+        /*margin:-10px -151px;
+        padding:1px 8px;*/
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px -74px;
+        padding:11px 16px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="istockphoto-1340543493-1024x1024.jpg" alt="">
+            <div>Khushi Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="my_name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="age" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="gender" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="locality" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="my_email" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="ph_num" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
